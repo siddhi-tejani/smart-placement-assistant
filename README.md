@@ -4,11 +4,26 @@
 A web application that helps engineering students prepare for technical placement interviews. Students can browse Python practice questions, submit answers, track their progress, and ask a rule-based chatbot basic questions about Python, REST APIs, FastAPI and MySQL.
 
 ## Team Members
-| Name | ID | Role |
-|------|----|------|
-|      |    |      |
+| Name | USN | Role |
+|------|-----|------|
+| Siddhi Tejani | 1DS24CS217 | Backend and Integration |
+| Sofiya Sindgi | 1DS24CS221 | Database |
+| Sowmya N Kumar | 1DS24CS223 | Frontend |
+| Tahir Nazeer | 1DS24CS236 | Chatbot, Testing and Documentation |
 
-College / Department: ____________________
+College / Department: Computer Science and Engineering , Dayananda Sagar College of Engineering 
+
+## Work Division
+The project was divided into four parts, following the team roles in the project guide.
+
+| Part | Owner | Files / Area |
+|------|-------|--------------|
+| 1. Backend and Integration | Siddhi Tejani | backend/main.py, schemas.py, database.py; all API endpoints, Pydantic validation, error handling, integration of all layers, GitHub repository |
+| 2. Database | Sofiya Sindgi | database/schema.sql, seed.sql; tables, relationships, sample data, SQL queries |
+| 3. Frontend | Sowmya N Kumar | frontend/ folder; HTML pages, CSS, JavaScript and Fetch API integration |
+| 4. Chatbot, Testing and Documentation | Tahir Nazeer | backend/chatbot.py, testing checklist, project report, README |
+
+
 
 ## Technology Used
 | Layer | Technology |
@@ -160,9 +175,13 @@ The chatbot in this project is **rule-based**: `chatbot.py` checks the message f
 - Progress shows only the last 20 attempts.
 
 ## Team Contributions
-| Member | Contribution |
-|--------|-------------|
-|        |             |
+## Team Contributions
+| Member | USN | Contribution |
+|--------|-----|-------------|
+| Siddhi Tejani | 1DS24CS217 | Planned the scope and architecture, built the FastAPI backend (all endpoints, Pydantic validation, error handling and parameterised SQL queries), connected the frontend, backend and database into a working application, and managed the GitHub repository. Contributed the largest share of the project. |
+| Sofiya Sindgi | 1DS24CS221 | Database part. Worked on the MySQL schema and sample data, verified the tables and relationships, ran SQL queries to check stored questions and attempts, and added sample questions. |
+| Sowmya N Kumar | 1DS24CS223 | Frontend part. Worked on the HTML, CSS and JavaScript pages, tested the question list, question detail, progress and chatbot screens, and took the project screenshots. |
+| Tahir Nazeer | 1DS24CS236 | Chatbot, testing and documentation part. Tested the rule-based chatbot with supported and unsupported questions, completed the testing checklist, and prepared the project report and documentation. |
 
 ## Screenshots
 See the `screenshots/` folder: question list, question detail, progress page and chatbot.
