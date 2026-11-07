@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questions | Smart Placement Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="questions">
+<nav>
+  <span class="brand">Smart Placement Assistant</span>
+  <a href="index.html">Home</a>
+  <a href="questions.html" class="active">Questions</a>
+  <a href="progress.html">Progress</a>
+  <a href="chatbot.html">Chatbot</a>
+</nav>
+<main>
+  <div class="card">
+    <h1>Python Questions</h1>
+    <div class="filters">
+      <select id="category">
+        <option value="">All categories</option>
+        <option>Strings</option>
+        <option>Lists</option>
+        <option>Dictionaries</option>
+        <option>Functions</option>
+        <option>Numbers</option>
+      </select>
+      <select id="difficulty">
+        <option value="">All difficulties</option>
+        <option>Beginner</option>
+        <option>Intermediate</option>
+        <option>Advanced</option>
+      </select>
+    </div>
+    <div id="message"></div>
+    <table>
+      <thead><tr><th>#</th><th>Title</th><th>Category</th><th>Difficulty</th></tr></thead>
+      <tbody id="question-rows"></tbody>
+    </table>
+  </div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

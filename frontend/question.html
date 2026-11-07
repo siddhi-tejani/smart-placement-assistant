@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question | Smart Placement Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="question">
+<nav>
+  <span class="brand">Smart Placement Assistant</span>
+  <a href="index.html">Home</a>
+  <a href="questions.html" class="active">Questions</a>
+  <a href="progress.html">Progress</a>
+  <a href="chatbot.html">Chatbot</a>
+</nav>
+<main>
+  <p><a href="questions.html">&larr; Back to questions</a></p>
+  <div id="message"></div>
+  <div class="card" id="question-card" hidden>
+    <h1 id="q-title"></h1>
+    <p><span class="badge" id="q-category"></span><span class="badge" id="q-difficulty"></span></p>
+    <p id="q-description"></p>
+    <strong>Sample input</strong>
+    <pre id="q-input"></pre>
+    <strong>Expected output</strong>
+    <pre id="q-output"></pre>
+  </div>
+  <div class="card" id="answer-card" hidden>
+    <h2>Your answer</h2>
+    <p class="note">Type the output your solution produces for the sample input, then submit. Or mark the question as completed if you solved it on your own.</p>
+    <textarea id="answer" placeholder="Type your answer here..."></textarea>
+    <p>
+      <button id="submit-btn">Submit Answer</button>
+      <button id="complete-btn" class="secondary">Mark as Completed</button>
+    </p>
+    <div id="result"></div>
+  </div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

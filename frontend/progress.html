@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress | Smart Placement Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="progress">
+<nav>
+  <span class="brand">Smart Placement Assistant</span>
+  <a href="index.html">Home</a>
+  <a href="questions.html">Questions</a>
+  <a href="progress.html" class="active">Progress</a>
+  <a href="chatbot.html">Chatbot</a>
+</nav>
+<main>
+  <div class="card">
+    <h1>My Progress</h1>
+    <p id="student-name" class="note"></p>
+    <div id="message"></div>
+    <div class="stats" id="stats" hidden>
+      <div class="stat"><div class="num" id="s-attempted">0</div>Questions attempted</div>
+      <div class="stat"><div class="num" id="s-completed">0</div>Completed</div>
+      <div class="stat"><div class="num" id="s-average">0</div>Average score</div>
+      <div class="stat"><div class="num" id="s-attempts">0</div>Total attempts</div>
+    </div>
+  </div>
+  <div class="card" id="history-card" hidden>
+    <h2>Recent attempts</h2>
+    <table>
+      <thead><tr><th>Question</th><th>Score</th><th>Completed</th><th>Date</th></tr></thead>
+      <tbody id="attempt-rows"></tbody>
+    </table>
+  </div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

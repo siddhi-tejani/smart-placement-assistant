@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot | Smart Placement Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="chatbot">
+<nav>
+  <span class="brand">Smart Placement Assistant</span>
+  <a href="index.html">Home</a>
+  <a href="questions.html">Questions</a>
+  <a href="progress.html">Progress</a>
+  <a href="chatbot.html" class="active">Chatbot</a>
+</nav>
+<main>
+  <div class="card">
+    <h1>Chatbot</h1>
+    <p class="note">This is a rule-based chatbot with predefined answers. It is not Generative AI, and its answers are suggestions, not guaranteed interview advice.</p>
+    <div class="chat-box" id="chat-box"></div>
+    <div id="message"></div>
+    <div class="chat-form">
+      <input type="text" id="chat-input" placeholder="Type your question, e.g. What is FastAPI?" maxlength="500">
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
